@@ -1,0 +1,52 @@
+/* ============================ */
+/* STYLES PRINCIPAUX DE LA PAGE */
+/* ============================ */
+
+/* Page entière */
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Listes et liens */
+
+li{
+    list-style-type: none;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+/* Gestion des couleurs */
+
+.blue, .fas {
+    color: #0065FC;
+}
+
+.light_blue {
+    color: #DEEBFF;
+}
+
+/* Gris pour les étoiles */
+.gray {
+    color: #C4C2BC;
+}
+
+/* Gris pour le fond */
+.background_gray {
+    color: #F2F2F2;
+}
+
+.black {
+    color: #000000;
+}
