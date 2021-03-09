@@ -73,7 +73,10 @@ a:hover {
 
 #header a {
     margin-left: 40px;
+}
 
+#header a:last-child {
+    margin-right: 20px;
 }
 
 .accomodations {
@@ -88,14 +91,123 @@ a:hover {
 /*      BLOC 1 : RECHERCHE      */
 /* ---------------------------- */
 
+#search {
+    margin-top: 40px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+#form {
+    display: inline-block;
+    height: 50px;
+}
+
+#form i {
+    display: inline-block;
+    padding: 17px;
+    background-color:#F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#form input {
+    display: inline-block;
+    padding: 15px ;
+    font-weight: bold;
+    color: black;
+    border: none;
+}
+
+#form button {
+    display: inline-block;
+    padding: 16px;
+    background-color:#0065FC;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    top: -1px;
+}
+
+#form i.show {
+    display: none;
+}
+
+
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding-right: 15px;
+    height: 50px;
+}
+
+.filter i {
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    position: relative;
+    left: -2px;
+    padding: 18px;
+}
+
+.filter i.fa-money-bill-wave {
+    padding: 18px 17px;
+}
+
+.filter i.fa-child {
+    padding: 18px 20px;
+}
+
+.filter p {
+    padding-left: 15px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    border: 1px solid gray;
+    padding: 4px 9px;
+    border-radius: 50px;
+}
+
+.info p {
+    margin-left: 10px;
+}
+
 /* ---------------------------- */
 /*     BLOC 2 : HEBERGEMENTS    */
 /* ---------------------------- */
+
+#accomodations {
+    margin-top: 40px;
+}
+
 
 /* ---------------------------- */
 /*      BLOC 3 - ACTIVITES      */
 /* ---------------------------- */
 
+#activities {
+    margin-top: 40px;
+}
 
 /* ============================ */
 /*           FOOTER             */
@@ -104,6 +216,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     background-color:#F2F2F2;
+    margin-top: 40px;
 }
 
 #footer div {
