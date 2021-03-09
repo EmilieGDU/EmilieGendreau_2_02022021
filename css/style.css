@@ -2,7 +2,9 @@
 /* STYLES PRINCIPAUX DE LA PAGE */
 /* ============================ */
 
-/* Page entière */
+/* ---------------------------- */
+/*         Page entière         */
+/* ---------------------------- */
 
 body {
     font-family: "Raleway", sans-serif;
@@ -11,7 +13,9 @@ body {
 }
 
 
-/* Listes et liens */
+/* ---------------------------- */
+/*        Listes et liens       */
+/* ---------------------------- */
 
 li{
     list-style-type: none;
@@ -27,7 +31,9 @@ a:hover {
 }
 
 
-/* Gestion des couleurs */
+/* ---------------------------- */
+/*     Gestion des couleurs     */
+/* ---------------------------- */
 
 .blue, .fas {
     color: #0065FC;
@@ -37,16 +43,77 @@ a:hover {
     color: #DEEBFF;
 }
 
-/* Gris pour les étoiles */
 .gray {
     color: #C4C2BC;
 }
 
-/* Gris pour le fond */
 .background_gray {
     color: #F2F2F2;
 }
 
 .black {
     color: #000000;
+}
+
+
+
+/* ============================ */
+/*           HEADER             */
+/* ============================ */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header a {
+    margin-left: 40px;
+
+}
+
+.accomodations {
+    text-decoration: overline;
+}
+
+/* ============================ */
+/*        CORPS DE PAGE         */
+/* ============================ */
+
+/* ---------------------------- */
+/*      BLOC 1 : RECHERCHE      */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/*     BLOC 2 : HEBERGEMENTS    */
+/* ---------------------------- */
+
+/* ---------------------------- */
+/*      BLOC 3 - ACTIVITES      */
+/* ---------------------------- */
+
+
+/* ============================ */
+/*           FOOTER             */
+/* ============================ */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    background-color:#F2F2F2;
+}
+
+#footer div {
+    margin: 30px auto 30px 50px; 
+}
+
+#footer ul {
+    padding-left: 0px;
+}
+
+#footer li {
+    margin-bottom: 10px;
 }
