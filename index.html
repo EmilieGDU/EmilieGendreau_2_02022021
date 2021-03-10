@@ -27,14 +27,14 @@
     <body>
 
     <!-- HEADER -->
-        <header>
+        <header id="header">
             <div>
                 <img src="images/logo/Reservia.svg" alt="Logo de Reservia"/>
             </div>
 
             <nav>
                 <ul>
-                    <li><a href="#accomodations" class="blue">Hébergements</a></li>
+                    <li><a href="#accomodations" class="blue accomodations">Hébergements</a></li>
 					<li><a href="#activities">Activités</a></li>
                     <li><a href="#" class="blue"><strong>S'inscrire</strong></a></li>
                 </ul>
@@ -53,7 +53,7 @@
             </header>
 
             <form method="post" action="#">
-				<div>
+				<div id="form">
 					<i class="fas fa-map-marker-alt black"></i>
 					<input type="search" name="vacation_spot" placeholder="Marseille, France" /> 
 					<button type="submit">
@@ -89,10 +89,10 @@
 			</div>
 
             <footer>
-                <p>
+                <div class="info">
                     <i class="fas fa-info"></i>
-                    Plus de 500 logements sont disponibles dans cette ville
-                </p>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+				</div>
             </footer>
         </section>
 
@@ -102,17 +102,17 @@
             <!-- SECTION 1 : HEBERGEMENTS -->
             <div id="accomodations"> 
                 <!-- Sous-section 1 : Hébergements à Marseille -->
-                <article class="city_accomodations">
+                <article class="container">
                     <header>
                         <h2>Hébergements à Marseille</h2>
                     </header>
 
-                    <div>
+                    <div class="city_accomodations">
                         <div class="accomodation_card">
 							<a href="#">
 								<article>
 									<div><img src="images/hebergements/2_large/1_H_Cannebiere.jpg" alt="Auberge de la Cannebière - Photo de la chambre" /></div>
-									<h2>Auberge de la Cannebière</h2>
+									<h3>Auberge de la Cannebière</h3>
 									<p>Nuit à partir de <strong>25€</strong></p>
 									<p>
 										<i class="fas fa-star"></i>
@@ -129,7 +129,7 @@
 							<a href="#">
 								<article>
 									<div><img src="images/hebergements/2_large/2_H_Port.jpg" alt="Hôtel du port - Photo de la chambre" /></div>
-									<h2>Hôtel du port</h2>
+									<h3>Hôtel du port</h3>
 									<p>Nuit à partir de 52€</p>
 									<p>
 										<i class="fas fa-star"></i>
@@ -146,7 +146,7 @@
 							<a href="#">
 								<article>
 									<div><img src="images/hebergements/2_large/3_H_Mouettes.jpg" alt="Hôtel Les mouettes - Photo de la chambre" /></div>
-									<h2>Hôtel Les mouettes</h2>
+									<h3>Hôtel Les mouettes</h3>
 									<p>Nuit à partir de 76€</p>
 									<p>
 										<i class="fas fa-star"></i>
@@ -163,7 +163,7 @@
 							<a href="#">
 								<article>
 									<div><img src="images/hebergements/2_large/4_H_Mer.jpg" alt="Hôtel de la mer - Photo de la chambre" /></div>
-									<h2>Hôtel de la mer</h2>
+									<h3>Hôtel de la mer</h3>
 									<p>Nuit à partir de 46€</p>
 									<p>
 										<i class="fas fa-star"></i>
@@ -180,7 +180,7 @@
 							<a href="#">
 								<article>
 									<div><img src="images/hebergements/2_large/5_H_Panier.jpg" alt="Auberge Le Panier - Photo de la chambre" /></div>
-									<h2>Auberge Le Panier</h2>
+									<h3>Auberge Le Panier</h3>
 									<p>Nuit à partir de <strong>23€</strong></p>
 									<p>
 										<i class="fas fa-star"></i>
@@ -197,7 +197,7 @@
 							<a href="#">
 								<article>
 									<div><img src="images/hebergements/2_large/6_H_Amina.jpg" alt="Hôtel chez Amina - Photo de la chambre" /></div>
-									<h2>Hôtel chez Amina</h2>
+									<h3>Hôtel chez Amina</h3>
 									<p>Nuit à partir de 96€</p>
 									<p>
 										<i class="fas fa-star"></i>
@@ -219,14 +219,14 @@
                 </article>
 
                 <!-- Sous-section 2 : Hébergements les plus populaires -->
-                <aside class="popular_accomodations">
+                <aside class="container">
                     <header>
                         <h2>Les plus populaires</h2>
 						<p><i class="fas fa-chart-line black"></i></p>
                     </header>
 
-                    <div>
-                        <div class="card_populaire">
+                    <div class="popular_accomodations">
+                        <div class="popular_card">
 							<a href="#">
 								<article>
 									<div>
@@ -247,7 +247,7 @@
 							</a>
 						</div>
 
-						<div class="card_populaire">
+						<div class="popular_card">
 							<a href="#">
 								<article>
 									<div>
@@ -268,7 +268,7 @@
 							</a>
 						</div>
 
-						<div class="card_populaire">
+						<div class="popular_card">
 							<a href="#">
 								<article>
 									<div>
@@ -302,7 +302,7 @@
                     <div class="column_1_desktop">
 						<div class="activity_card">
                             <a href="#">
-                                <figure>
+                                <figure class="portrait">
                                     <img src="images/activites/2_large/1_A_Port.jpg" alt="Vieux Port de Marseille" class="portrait" />
                                     <figcaption>Vieux Port</figcaption>
                                 </figure>
@@ -313,7 +313,7 @@
 					<div class="column_2_desktop">
                         <div class="activity_card">   
                             <a href="#">
-                                <figure>
+                                <figure class="pomegues">
                                     <img src="images/activites/2_large/2_A_Pomegues.jpg" alt="Fort de Pomègues" class="pomegues" />
                                     <figcaption>Fort de Pomègues</figcaption>
                                 </figure>
@@ -322,7 +322,7 @@
 
                         <div class="activity_card">
                             <a href="#">
-                                <figure>
+                                <figure class="frioul">
                                     <img src="images/activites/2_large/3_A_Frioul.jpg" alt="Iles du Frioul" class="frioul" />
                                     <figcaption>Iles du Frioul</figcaption>
                                 </figure>
@@ -333,7 +333,7 @@
 					<div class="column_3_desktop">
                         <div class="activity_card">
                             <a href="#">
-                                <figure>
+                                <figure class="portrait">
                                     <img src="images/activites/2_large/4_A_Calanques.jpg" alt="Parc National des Calanques" class="portrait" />
                                     <figcaption>Parc National des Calanques</figcaption>
                                 </figure>
@@ -344,7 +344,7 @@
 					<div class="column_4_desktop">
                         <div class="activity_card">
                             <a href="#">
-                                <figure>
+                                <figure class="ndgarde">
                                     <img src="images/activites/2_large/5_A_NDGarde.jpg" alt="Notre-Dame-de-la-Garde" class="ndgarde" />
                                     <figcaption>Notre-Dame-de-la-Garde</figcaption>
                                 </figure>
@@ -353,7 +353,7 @@
 
                         <div class="activity_card">
                             <a href="#">
-                                <figure>
+                                <figure class="longchamp">
                                     <img src="images/activites/2_large/6_A_Longchamp.jpg" alt="Parc Longchamp" class="longchamp" />
                                     <figcaption>Parc Longchamp</figcaption>
                                 </figure>
@@ -366,7 +366,7 @@
 
 
     <!-- FOOTER -->
-        <footer>
+        <footer id="footer">
             <div>
                 <h3>A propos</h3>
                 <ul>
