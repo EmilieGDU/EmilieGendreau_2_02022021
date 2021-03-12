@@ -8,9 +8,22 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    margin: 0px;
-    padding: 0px;
+    width: 95%;
+    margin: auto;
 }
+
+h1, h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.9rem;
+} 
 
 
 /* ---------------------------- */
@@ -65,22 +78,26 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
 }
 
 #header ul {
     display: flex;
 }
 
-#header a {
-    margin-left: 40px;
+#header li {
+    margin-left: 70px;
+    font-size: 1.1rem;
 }
 
-#header a:last-child {
-    margin-right: 20px;
+#header li:last-child {
+    margin-right: 30px;
 }
 
 .accomodations {
-    text-decoration: overline;
+    /* text-decoration: overline; */
+    border-top: 2px solid #0065FC;
+    padding: 30px 15px 0px 20px;
 }
 
 /* ============================ */
@@ -92,11 +109,19 @@ a:hover {
 /* ---------------------------- */
 
 #search {
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-top: 5px;
 }
 
 form {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #form {
@@ -114,17 +139,23 @@ form {
 #form input {
     display: inline-block;
     padding: 15px ;
-    font-weight: bold;
     color: black;
+    font-weight: bold;
     border: none;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;        
+    font-size: 1.1rem;
 }
 
 #form button {
     display: inline-block;
     padding: 16px;
     background-color:#0065FC;
-    color: #FFFFFF;
-    font-weight: bold;
+    color: #FFFFFF;        
+    font-size: 1.1rem;
     border: none;
     border-radius: 0px 15px 15px 0px;
     position: relative;
@@ -138,15 +169,19 @@ form {
 
 #filters {
     display: flex;
+    align-items: baseline;
     flex-wrap: wrap;
     margin-top: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+}
+
+#filters p {
+    font-size: 1.1rem;
 }
 
 .filters {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30px;
 }
 
 .filter {
@@ -185,9 +220,10 @@ form {
     cursor: pointer;
 }
 
+
 .info {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .info i {
@@ -197,7 +233,8 @@ form {
 }
 
 .info p {
-    margin-left: 10px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
 }
 
 /* ---------------------------- */
@@ -215,27 +252,31 @@ form {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
+}
+
+header h2 {
+    padding: 20px 0px 10px 40px;
 }
 
 #accomodations article.container {
-    width: 65%;   
+    width: 65%;    
 }
 
 div.city_accomodations {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
 div.accomodation_card {
-    margin: 10px;
+    margin: 15px;
     padding: 5px;
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 5px 5px 10px gray;
-    width: 30%;
+    width: 28%;
 }
 
 div.accomodation_card article {
@@ -250,48 +291,77 @@ div.accomodation_card img {
     border-radius: 15px 15px 0px 0px;
 }
 
+div.description_bottom {
+    margin: 0px;
+    padding: 5px 0px 5px 10px;
+    line-height: 1rem;
+}
+
+footer p {
+    padding: 20px 0px 30px 40px;
+}
 
 #accomodations aside {
     width: 30%;
 }
 
 aside header {
-    width: 80%;
+    width: 98%;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
+    align-items: baseline;
+}
+
+p.trend {
+    padding-right: 40px;
 }
 
 div.popular_accomodations {
     width: 98%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 div.popular_card {
-    margin: 10px;
+    border: 3px solid orange;
+    margin: 0px 10px 45px 10px;
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 5px 5px 10px gray;
-    width: 80%;
+    width: 82%;
 }
 
 div.popular_card article {
+    border: 2px solid blue;
     width: 100%;
+    height: 145px;
+    margin: 0px;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
 div.popular_card img {
+    border: 2px solid red;
     width: 128px;
     height: 136px;
+    margin: 0px;
+    padding: 5px 0px 5px 5px;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
-    margin-right: 15px;
+}
+
+div.description_aside {
+    border: 2px solid green;
+    height: 130px;
+    margin: 0px;
+    padding: 10px 0px 5px 10px;
+}
+
+p.rating {
+    padding-top: 20px;
 }
 
 
@@ -308,6 +378,7 @@ div.popular_card img {
 .activities {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 div[class*="column"] {
