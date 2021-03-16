@@ -536,7 +536,7 @@ h4 {
 /* ---------------------------- */
 /*         Grands écrans        */
 /* ---------------------------- */
-@media all and (min-width: 1441px) {
+@media all and (min-width: 1441px) and (max-width: 2560px) {
 
     h1, h2 {
         font-size: 1.5rem;
