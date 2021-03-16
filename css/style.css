@@ -8,25 +8,24 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    width: 95%;
+    width: 1440px;
     margin: auto;
 }
 
 h1, h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 p {
-    font-size: 0.9rem;
+    font-size: 1rem;
 } 
 
 
@@ -79,10 +78,11 @@ a:hover {
 /* ============================ */
 
 #header {
+    width: 90%;
+    margin: 35px auto 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
 }
 
 #header ul {
@@ -90,12 +90,12 @@ a:hover {
 }
 
 #header li {
-    margin-left: 70px;
+    padding-left: 70px;
     font-size: 1.1rem;
 }
 
 #header li:last-child {
-    margin-right: 30px;
+    padding-right: 30px;
 }
 
 .accomodations {
@@ -112,11 +112,12 @@ a:hover {
 /* ---------------------------- */
 
 #search {
-    margin-top: 30px;
+    width: 90%;
+    margin: 30px auto 0px auto;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 header p {
@@ -133,7 +134,7 @@ form {
 }
 
 #form i {
-    display: inline-block;
+    display: inline-block;    
     padding: 17px;
     background-color:#F2F2F2;
     border-radius: 15px 0px 0px 15px;
@@ -141,7 +142,7 @@ form {
 
 #form input {
     display: inline-block;
-    padding: 15px ;
+    padding: 15px;
     color: black;
     font-weight: bold;
     border: none;
@@ -155,27 +156,24 @@ input::placeholder {
 
 #form button {
     display: inline-block;
-    padding: 16px;
+    padding: 14px;
     background-color:#0065FC;
     color: #FFFFFF;        
     font-size: 1.1rem;
     border: none;
     border-radius: 0px 15px 15px 0px;
-    position: relative;
-    top: -1px;
 }
 
-#form i.show {
+#form i.show_mobile {
     display: none;
 }
 
 
 #filters {
+    margin: 32px 0px 35px 10px;
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    margin-top: 32px;
-    margin-bottom: 35px;
 }
 
 #filters p {
@@ -194,7 +192,6 @@ input::placeholder {
     margin-left: 30px;
     border: 1px solid gray;
     border-radius: 30px;
-    padding-right: 15px;
     height: 50px;
 }
 
@@ -215,7 +212,7 @@ input::placeholder {
 }
 
 .filter p {
-    padding-left: 15px;
+    padding: 15px 20px 15px 15px;
 }
 
 .filter:hover {
@@ -225,6 +222,7 @@ input::placeholder {
 
 
 .info {
+    margin: 0px 0px 30px 10px;
     display: flex;
     align-items: baseline;
 }
@@ -237,7 +235,8 @@ input::placeholder {
 
 .info p {
     margin: 0px 0px 0px 10px;
-    padding: 0px;
+    padding: 0px;    
+    font-weight: 400;
 }
 
 /* ---------------------------- */
@@ -245,9 +244,10 @@ input::placeholder {
 /* ---------------------------- */
 
 #accomodations {
-    margin-top: 40px;
+    width: 90%;
+    margin: 30px auto 0px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #accomodations .container {
@@ -263,12 +263,12 @@ header h2 {
 }
 
 #accomodations article.container {
-    width: 65%;    
+    width: 66%;    
 }
 
 div.city_accomodations {
-    width: 95%;
-    margin: auto;
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -276,12 +276,18 @@ div.city_accomodations {
 }
 
 div.accomodation_card {
-    margin: 15px;
+    height: 200px;
+    width: 31%;
     padding: 5px;
+    margin: 15px 0px;
+    box-sizing: border-box;
     background-color: #FFFFFF;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px gray;
-    width: 28%;
+    box-shadow: 5px 5px 10px gray;    
+}
+
+.accomodation_card > a {
+    width: 100%;
 }
 
 div.accomodation_card article {
@@ -290,36 +296,40 @@ div.accomodation_card article {
 
 div.accomodation_card img {
     width: 100%;
-    height: 125px;
+    height: 115px;
     object-fit: cover;
-    /* object-position: bottom; */
     border-radius: 15px 15px 0px 0px;
 }
 
 div.description_bottom {
     margin: 0px;
     padding: 5px 0px 5px 10px;
+    height: 70px;
 }
 
-.description_bottom h3, p{
+.description_bottom h3, p {
     margin: 0px;
-    padding-top: 5px;
-    line-height: 1.2rem;
+    padding: 0px;
+    line-height: 0.9rem;
+}
+
+.description_bottom p {
+    font-size: 0.8rem;
 }
 
 footer p {
-    padding: 20px 0px 30px 40px;
-    font-size: 1rem;
+    padding: 35px 0px 35px 40px;
     font-weight: bold;
 }
 
+
 #accomodations aside {
-    width: 30%;
+    width: 31%;
 }
 
 aside header {
-    width: 98%;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -327,10 +337,12 @@ aside header {
 
 p.trend {
     padding-right: 40px;
+    font-size: 1.3rem;
 }
 
 div.popular_accomodations {
-    width: 98%;
+    width: 100%;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -338,12 +350,15 @@ div.popular_accomodations {
 }
 
 div.popular_card {
-    margin: 12px 0px 28px 0px;
-    padding: 5px;
+    margin: 15px 0px 16px 0px;
     background-color: #FFFFFF;
     border-radius: 15px;
     box-shadow: 5px 5px 10px gray;
     width: 82%;
+}
+
+div.popular_card:last-child {
+    margin-bottom: 40px;
 }
 
 div.popular_card article {
@@ -356,7 +371,7 @@ div.popular_card article {
 div.popular_card img {
     width: 128px;
     height: 135px;
-    padding: 5px 0px 5px 5px;
+    padding: 8px 0px 5px 5px;
     object-fit: cover;
     border-radius: 15px 0px 0px 15px;
 }
@@ -373,12 +388,17 @@ div.description_aside {
 
 .top_side h3, p {
     margin: 0px;
-    padding-top: 5px;
-    line-height: 1.2rem;
+    padding-top: 10px;
+    line-height: 0.9rem;
 }
 
-.bottom_side {
-    padding-bottom: 5px;
+.top_side p {
+    font-size: 0.8rem;
+}
+
+.bottom_side > p {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
 }
 
 
@@ -388,15 +408,24 @@ div.description_aside {
 /* ---------------------------- */
 
 #activities {
-    margin-top: 40px;
+    width: 90%;
+    margin: 30px auto 0px auto;
     display: flex;
     flex-direction: column;
 }
 
+#activities header {
+    margin-bottom: 20px;
+}
+
+#activities header > h2 {
+    padding-left: 0px;
+}
+
 .activities {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 div[class*="column"] {
@@ -415,9 +444,16 @@ div[class*="column"] {
     align-items: center;
 }
 
+.activity_card > a {
+    width: 100%;
+}
+
 .activity_card figure {
     border-radius: 15px;
     box-shadow: 0px 1px 1px gray;
+    width: 100%;
+    max-width: 300px;
+    margin: 0px;
 }
 
 figure.portrait {
@@ -425,35 +461,37 @@ figure.portrait {
 }
 
 #activities img {
-    width: 300px;
+    width: 100%;
     border-radius: 15px 15px 0px 0px; 
     object-fit: cover;
 }
 
 figure.portrait img {
     height: 400px;
-    object-position: center;
 }
 
 figure.pomegues img {
-    height: 180px;
+    height: 195px;
 }
 
 figure.frioul img {
-    height: 108px;
+    height: 123px;
+    object-position: top;
 }
 
 figure.ndgarde img {
-    height: 137px;
+    height: 152px;
+    object-position: top;
 }
 
 figure.longchamp img {
-    height: 153px;
+    height: 168px;
+    object-position: top;
 }
 
 .activity_card figcaption {
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
 }
 
 
@@ -464,11 +502,16 @@ figure.longchamp img {
     display: flex;
     justify-content: space-between;
     background-color:#F2F2F2;
-    margin: 50px auto;;
+    margin-top: 50px;
 }
 
 #footer div {
-    margin: 30px auto 30px 50px; 
+    width: 33%;
+    margin: 30px auto 30px 0px; 
+}
+
+#footer div:first-child {
+    margin-left: 70px;
 }
 
 h4 {
@@ -481,4 +524,36 @@ h4 {
 
 #footer li {
     margin-bottom: 10px;
+}
+
+
+/* ============================ */
+/*      RESPONSIVE DESIGN       */
+/* ============================ */
+
+/* ---------------------------- */
+/*      Très petits écrans      */
+/* ---------------------------- */
+@media screen and (max-width:767px) {
+}
+
+/* ---------------------------- */
+/*          Tablettes           */
+/* ---------------------------- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* ---------------------------- */
+/*          Ordinateurs         */
+/* ---------------------------- */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* ---------------------------- */
+/*         Grands écrans        */
+/* ---------------------------- */
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+   
 }
