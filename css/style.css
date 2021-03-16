@@ -8,7 +8,7 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    width: 1440px;
+    /* width: 1440px; */
     margin: auto;
 }
 
@@ -502,18 +502,18 @@ figure.longchamp img {
 /* ============================ */
 #footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color:#F2F2F2;
     margin-top: 50px;
+}
+
+#footer div:first-child {
+    margin-left: 70px;
 }
 
 #footer div {
     width: 33%;
     margin: 30px auto 30px 0px; 
-}
-
-#footer div:first-child {
-    margin-left: 70px;
 }
 
 h4 {
@@ -534,16 +534,137 @@ h4 {
 /* ============================ */
 
 /* ---------------------------- */
-/*      Très petits écrans      */
+/*         Grands écrans        */
 /* ---------------------------- */
-@media screen and (max-width:767px) {
-}
+@media all and (min-width: 1441px) {
 
-/* ---------------------------- */
-/*          Tablettes           */
-/* ---------------------------- */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    h4 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    } 
 
+    #header li {
+        padding-left: 90px;
+        font-size: 1.3rem;
+    }
+
+    #form i {
+        font-size: 1.1rem;
+    }
+
+    input::placeholder {        
+        font-size: 1.2rem;
+    }
+    
+    #form button {       
+        font-size: 1.2rem;
+    }
+
+    header h2 {
+        padding: 20px 0px 10px 80px;
+    }
+
+    footer p {
+        padding: 35px 0px 35px 80px;
+        font-weight: bold;
+    }
+
+    p.trend {
+        padding-right: 80px;
+    }
+
+    img.cannebiere {
+        object-position: 75% 20%;
+    }
+
+    img.port {
+        object-position: 75% 60%;
+    }
+
+    img.mouettes {
+        object-position: 90% 100%;
+    }
+
+    img.mer {
+        object-position: 60% 65%;
+    }
+
+    img.panier {
+        object-position: 50% 50%;
+    }
+
+    img.amina {
+        object-position: 30% 55%;
+    }
+    
+    #activities {
+        margin: 30px auto;
+    }
+
+    .activities {
+        justify-content: space-between;
+    }
+
+    .activity_card figure {
+        max-width: 525px;
+    }
+
+    figure.portrait {
+        height: auto;
+        box-shadow: 0px 1px 1px gray;
+    }
+    
+    #activities img {
+        width: 100%;
+        border-radius: 15px 15px 0px 0px; 
+        object-fit: cover;
+    }
+    
+    figure.portrait img {
+        height: 600px;
+    }
+    
+    figure.pomegues {
+        margin-bottom: 50px;
+    }
+
+    figure.pomegues img {
+        height: 275px;
+    }
+    
+    figure.frioul img {
+        height: 203px;
+        object-position: top;
+    }
+    
+    figure.ndgarde img {
+        height: 232px;
+        object-position: top;
+    }
+    
+    figure.longchamp img {
+        height: 248px;
+        object-position: top;
+    }
+
+    #footer {
+        margin-top: 100px;
+    }
+
+    #footer div:first-child {
+        margin-left: 130px;
+    }
 }
 
 /* ---------------------------- */
@@ -554,8 +675,17 @@ h4 {
 }
 
 /* ---------------------------- */
-/*         Grands écrans        */
+/*          Tablettes           */
 /* ---------------------------- */
-@media all and (min-width: 1200px) and (max-width: 1440px) {
-   
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
 }
+
+/* ---------------------------- */
+/*      Très petits écrans      */
+/* ---------------------------- */
+@media screen and (max-width:767px) {
+
+}
+
+
