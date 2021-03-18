@@ -745,12 +745,12 @@ h4 {
     #header li.accomodations {
         border-top: none;
         border-bottom: 3px solid #0065FC;
-        padding: 30px 15px 15px 15px;
+        padding-bottom: 15px;
     }
 
     #header li.activities {
         border-bottom: 3px solid #C4C2BC;
-        padding: 30px 15px 15px 15px;
+        padding-bottom: 15px;
     }
 
     .header_text div {
@@ -772,17 +772,31 @@ h4 {
     }
 
     #form {
-        width: 100%;
+        width: auto;
         min-width: 375px;
     }
 
-    /*#form .show_desktop {
+    #form input {
+        display: inline-block;
+        min-width: 200px;
+    }
+
+    #form .show_desktop {
         display: none;
     }
 
     #form i.show_mobile {
-        display: block;
-    }*/
+        display: inline-block;
+        color: #FFFFFF;
+        background-color:#0065FC;
+        font-size: 1rem;
+        padding: 0px 3px;
+    }
+
+    #form button {
+        border-radius: 15px;
+    }
+    
 
     #filters {
         margin-bottom: 20px;
@@ -921,6 +935,14 @@ h4 {
         height: 175px;
     }
 
+    .top_side h3, p {
+        line-height: 1rem;
+    }
+
+    .top_side p {
+        margin-top: 10px;
+    }
+
 
 /* ---------------------------- */
 /*      BLOC 3 - ACTIVITES      */
@@ -1013,16 +1035,17 @@ h4 {
     }
 
     #footer div:first-child {
+        margin-top: 20px;
         margin-left: 30px;
     }
 
     #footer div {
         width: 100%;
-        margin: 30px auto 0px 30px; 
+        margin: 20px auto 0px 30px; 
     }
 
     #footer div:last-child {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
 }
