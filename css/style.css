@@ -545,7 +545,7 @@ h4 {
 /* ---------------------------- */
 /*         Grands écrans        */
 /* ---------------------------- */
-/*@media all and (min-width: 1441px) and (max-width: 2560px) {
+@media all and (min-width: 1441px) and (max-width: 2560px) {
 
     h1, h2 {
         font-size: 1.5rem;
@@ -674,14 +674,159 @@ h4 {
     #footer div:first-child {
         margin-left: 130px;
     }
-} */
+}
 
 /* ---------------------------- */
 /*          Ordinateurs         */
 /* ---------------------------- */
 @media all and (min-width: 992px) and (max-width: 1199px) {
 
+/* ---------------------------- */
+/*         Page entière         */
+/* ---------------------------- */
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.7rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+    } 
+
+/* ---------------------------- */
+/*      BLOC 1 : RECHERCHE      */
+/* ---------------------------- */
+    #header img {
+        margin-top: 20px;
+    }    
+
+    #header a {
+            font-size: 1rem;
+        }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    #form i {
+        font-size: 0.9rem;
+    }
+
+    input::placeholder {        
+        font-size: 0.9rem;
+    }
+
+    #form button {        
+        font-size: 0.9rem;
+    }
+
+    #filters p {
+        font-size: 0.8rem;
+    }
+
+    .info i, .info p {
+        font-size: 0.8rem;
+    }
+
+    .info i {
+        padding: 4px 8px;
+    }
+
+/* ---------------------------- */
+/*     BLOC 2 : HEBERGEMENTS    */
+/* ---------------------------- */
+
+    header h2 {
+        padding: 20px 0px 10px 30px;
+    }
+
+    .description_bottom p {
+        font-size: 0.7rem;
+    } 
+
+    footer p {
+        padding: 25px 0px 35px 30px;
+        font-size: 0.9rem;
+    }
+
+    p.trend {
+        padding-right: 30px;
+        font-size: 1rem;
+    }
+
+    div.popular_card {
+        width: 85%;
+    }
+
+    div.popular_card article {
+        height: 135px;
+    }
+
+    div.popular_card img {
+        width: 108px;
+        height: 115px;
+    }
+
+    div.description_aside {
+        height: 115px;
+        padding-left: 10px;
+    }
+
+    .top_side h3 {
+        padding-top: 5px;
+    }
+    
+    .top_side p {
+        padding-top: 10px;
+        font-size: 0.7rem;
+    }
+    
+    .bottom_side > p {
+        font-size: 0.7rem;
+        padding-bottom: 5px;
+    }
+
+/* ---------------------------- */
+/*      BLOC 3 - ACTIVITES      */
+/* ---------------------------- */
+    #activities {
+        margin-top: 20px;
+    }
+
+    figure.portrait img {
+        height: 408px;
+    }    
+
+    figure.port img {
+        object-position: 55% 40%;
+    }
+
+    .activity_card figcaption {
+        font-size: 0.7rem;
+    }
+
+/* ============================ */
+/*           FOOTER             */
+/* ============================ */
+
+    #footer li {
+        font-size: 0.8rem;;
+    }
+
 }
+
 
 /* ---------------------------- */
 /*          Tablettes           */
@@ -795,8 +940,7 @@ h4 {
 
     #form button {
         border-radius: 15px;
-    }
-    
+    }    
 
     #filters {
         margin-bottom: 20px;
