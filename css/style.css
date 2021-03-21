@@ -139,7 +139,7 @@ form {
 #form {
     display: inline-block;
     height: 50px;
-    min-width: 405px; 
+    /* min-width: 405px;  */
 }
 
 #form i {
@@ -283,7 +283,6 @@ div.city_accomodations {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: space-between;
 }
 
 div.accomodation_card {
@@ -697,7 +696,7 @@ h4 {
     }
 
     #footer div:first-child {
-        margin-left: 80px;
+        margin-left: 130px;
     }
 }
 
@@ -966,7 +965,7 @@ h4 {
         height: 70px;
     }
 
-    .description_bottom h3, p {
+    .description_bottom h3, .description_bottom p {
         margin: 0px 0px 5px 0px;
         padding: 0px;
         line-height: 1rem;
@@ -1056,11 +1055,13 @@ h4 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: auto;
     }
 
     #header div:first-child {
         position: relative;
         top: 15px;
+        margin-left: 15px;
     }
 
     .header_text {
@@ -1082,9 +1083,7 @@ h4 {
 
     #header li {
         width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        text-align: center;
     }
 
     #header li.accomodations {
@@ -1095,13 +1094,13 @@ h4 {
 
     #header li.activities {
         border-bottom: 3px solid #C4C2BC;
-        padding-bottom: 15px;
+        padding: 28px 15px 15px 20px;
     }
 
     .header_text div {
         position: absolute;
         top: 0px;
-        right: 0px;
+        right: 15px;
     }
 
 /* ============================ */
@@ -1112,18 +1111,29 @@ h4 {
 /*      BLOC 1 : RECHERCHE      */
 /* ---------------------------- */
 
+    #search {
+        width: 95vw;
+        min-width: 330px;
+        margin: auto;
+    }
+
+    #search header {
+        margin: 0px 10px;
+    }
+
     header p {
         margin-top: 10px;
     }
 
     #form {
-        width: auto;
-        min-width: 375px;
+        min-width: 320px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     #form input {
         display: inline-block;
-        min-width: 240px;
+        min-width: 180px;
     }
 
     #form .show_desktop {
@@ -1135,7 +1145,7 @@ h4 {
         color: #FFFFFF;
         background-color:#0065FC;
         font-size: 1rem;
-        padding: 0px 3px;
+        padding: 0px 1px;
     }
 
     #form button {
@@ -1143,7 +1153,7 @@ h4 {
     }    
 
     #filters {
-        margin-bottom: 20px;
+        margin: 10px auto 20px auto;
     }
 
     #filters p:first-child {
@@ -1154,8 +1164,8 @@ h4 {
         margin-bottom: 15px;
     }
 
-    footer .info {
-        margin-bottom: 10px;
+    .info {
+        margin: 10px;
     }
 
 /* ---------------------------- */
@@ -1247,12 +1257,12 @@ h4 {
 
     #footer div:first-child {
         margin-top: 20px;
-        margin-left: 30px;
+        margin-left: 45px;
     }
 
     #footer div {
-        width: 100%;
-        margin: 20px auto 0px 30px; 
+        width: auto;
+        margin: 20px 0px 0px 45px; 
     }
 
     #footer div:last-child {
@@ -1268,7 +1278,7 @@ h4 {
 @media screen and (max-width: 376px) {
 
     body {
-        min-width: 320px;
+        min-width: 330px;
     }
 
 /* ---------------------------- */
@@ -1276,33 +1286,28 @@ h4 {
 /* ---------------------------- */
 
     #search {
-        width: 99%;
-        margin: 30px 0px 0px 8px;
+        width: 95vw;
+        margin: 30px auto 0px auto;
     }
 
     #search form {
-        margin: 10px 0px 10px 0px;
+        margin: 10px 10px 10px 10px;
     }
 
     #form {
-        min-width: 320px;
-    }
-
-    #form input {
-        display: inline-block;
-        min-width: 200px;
+        min-width: 300px;
     }
 
     #form i.show_mobile {
         padding: 0px 2px;
     }
 
-    #filters {
-        margin-left: 5px;
+    #filters p:first-child {
+        margin-left: 15px;
     }
     
-    .info {
-        margin-left: 5px;
+    .filter {
+        margin-left: 20px;
     }
 
 
