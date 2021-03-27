@@ -1361,17 +1361,17 @@ h4 {
     }
 
     div.popular_card article {
-        height: 185px;
+        height: 155px;
     }
 
     div.popular_card img {
-        width: 168px;
-        height: 175px;
+        width: 135px;
+        height: 145px;
     }
 
     div.description_aside {
         width: 240px;
-        height: 175px;
+        height: 145px;
     }
 
 /* ---------------------------- */
