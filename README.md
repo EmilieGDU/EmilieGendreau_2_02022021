@@ -23,11 +23,11 @@ La première étape consiste à intégrer la maquette responsive en **HTML** et 
 
 ### Informations complémentaires ###
 - Ne pas utiliser de framework ou de pré-compilateur pour ce projet. Comme il s'agit d'un début de parcours, il faut monter en compétences sur HTML et CSS, c'est-à-dire qu'il faut apprendre à coder *"from scratch"*.
-- L'utilisation de Visual Studio Code est recommandée.
-- Possibilité d'intégrer les icônes Font Awesome en HTML ou en CSS.
-- L'utilisation de Flexbox est fortement recommandée, mais il est possible d'utiliser CSS Grid.
+- L'utilisation de **Visual Studio Code** est recommandée.
+- Possibilité d'intégrer les icônes Font Awesome en **HTML** ou en **CSS**.
+- L'utilisation de **Flexbox** est fortement recommandée, mais il est possible d'utiliser CSS Grid.
 - Le code doit utiliser les balises sémantiques et ne devra contenir aucune erreur ni alerte au validateur W3C HTML et CSS.
 - Le code devra être compatible avec les dernières versions de Chrome et Firefox.
 - HTML et CSS doivent être séparés, et le dossier de rendu doit être organisé.
-- Versionner le code avec GitHub, dès les premières lignes de code. 
-- Déployer la page sur GitHub Pages ou GitLab Pages, au choix.
+- Versionner le code avec **GitHub**, dès les premières lignes de code. 
+- Déployer la page sur **GitHub Pages** ou GitLab Pages, au choix.
